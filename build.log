@@ -1,0 +1,1493 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] mancala-api                                                        [jar]
+[INFO] mancala-web                                                        [jar]
+[INFO] mancala-microservice                                               [pom]
+[INFO] 
+[INFO] -----------------< com.dzone.mancalagame:mancala-api >------------------
+[INFO] Building mancala-api 0.0.1-SNAPSHOT                                [1/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ mancala-api ---
+[INFO] Deleting D:\mancala-game\mancala-microservice\mancala-api\target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ mancala-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ mancala-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 14 source files to D:\mancala-game\mancala-microservice\mancala-api\target\classes
+[INFO] 
+[INFO] --- spring-cloud-contract-maven-plugin:2.1.2.RELEASE:generateTests (default-generateTests) @ mancala-api ---
+[INFO] Generating server tests source code for Spring Cloud Contract Verifier contract verification
+[INFO] Will use contracts provided in the folder [D:\mancala-game\mancala-microservice\mancala-api\src\test\resources\contracts]
+[INFO] Directory with contract is present at [D:\mancala-game\mancala-microservice\mancala-api\src\test\resources\contracts]
+[INFO] Test Source directory: D:\mancala-game\mancala-microservice\mancala-api\target\generated-test-sources\contracts added.
+[INFO] Using [com.dzone.mancala.game.cdc.BaseClass] as base class for test classes, [null] as base package for tests, [null] as package with base classes, base class mappings []
+[INFO] Creating new class file [D:\mancala-game\mancala-microservice\mancala-api\target\generated-test-sources\contracts\com\dzone\mancala\game\cdc\ContractVerifierTest.java]
+[INFO] Generated 1 test classes.
+[INFO] 
+[INFO] --- spring-cloud-contract-maven-plugin:2.1.2.RELEASE:convert (default-convert) @ mancala-api ---
+[INFO] Will use contracts provided in the folder [D:\mancala-game\mancala-microservice\mancala-api\src\test\resources\contracts]
+[INFO] Copying Spring Cloud Contract Verifier contracts to [D:\mancala-game\mancala-microservice\mancala-api\target\stubs\META-INF\com.dzone.mancalagame\mancala-api\0.0.1-SNAPSHOT\contracts]. Only files matching [.*] pattern will end up in the final JAR with stubs.
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Converting from Spring Cloud Contract Verifier contracts to WireMock stubs mappings
+[INFO]      Spring Cloud Contract Verifier contracts directory: D:\mancala-game\mancala-microservice\mancala-api\src\test\resources\contracts
+[INFO] Stub Server stubs mappings directory: D:\mancala-game\mancala-microservice\mancala-api\target\stubs\META-INF\com.dzone.mancalagame\mancala-api\0.0.1-SNAPSHOT\mappings
+[INFO] Creating new stub [D:\mancala-game\mancala-microservice\mancala-api\target\stubs\META-INF\com.dzone.mancalagame\mancala-api\0.0.1-SNAPSHOT\mappings\shouldReturnMancalaGameSowingPit.json]
+[INFO] Creating new stub [D:\mancala-game\mancala-microservice\mancala-api\target\stubs\META-INF\com.dzone.mancalagame\mancala-api\0.0.1-SNAPSHOT\mappings\shouldReturnNewlyCreatedMancalaGame.json]
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ mancala-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] skip non existing resourceDirectory D:\mancala-game\mancala-microservice\mancala-api\target\generated-test-resources\contracts
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ mancala-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to D:\mancala-game\mancala-microservice\mancala-api\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ mancala-api ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.dzone.mancala.game.cdc.ContractVerifierTest
+12:53:21.214 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.dzone.mancala.game.cdc.ContractVerifierTest]
+12:53:21.220 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+12:53:21.230 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+12:53:21.264 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.dzone.mancala.game.cdc.ContractVerifierTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+12:53:21.288 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.dzone.mancala.game.cdc.ContractVerifierTest], using SpringBootContextLoader
+12:53:21.294 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dzone.mancala.game.cdc.ContractVerifierTest]: class path resource [com/dzone/mancala/game/cdc/ContractVerifierTest-context.xml] does not exist
+12:53:21.295 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dzone.mancala.game.cdc.ContractVerifierTest]: class path resource [com/dzone/mancala/game/cdc/ContractVerifierTestContext.groovy] does not exist
+12:53:21.295 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.dzone.mancala.game.cdc.ContractVerifierTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:53:21.296 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.dzone.mancala.game.cdc.ContractVerifierTest]: ContractVerifierTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:53:21.384 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.dzone.mancala.game.cdc.ContractVerifierTest]
+12:53:21.471 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\mancala-game\mancala-microservice\mancala-api\target\classes\com\dzone\mancala\game\MancalaGameApiApplication.class]
+12:53:21.472 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.dzone.mancala.game.MancalaGameApiApplication for test class com.dzone.mancala.game.cdc.ContractVerifierTest
+12:53:21.591 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.dzone.mancala.game.cdc.ContractVerifierTest]: using defaults.
+12:53:21.592 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+12:53:21.615 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@58695725, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@543588e6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@f5acb9d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4fb3ee4e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5d7148e2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@25fb8912, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c24b813, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2c35e847, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7bd4937b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@21e360a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5ba3f27a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@58d75e99]
+12:53:21.618 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.dzone.mancala.game.cdc.ContractVerifierTest]
+12:53:21.618 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.dzone.mancala.game.cdc.ContractVerifierTest]
+12:53:21.620 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.dzone.mancala.game.cdc.ContractVerifierTest]
+12:53:21.620 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.dzone.mancala.game.cdc.ContractVerifierTest]
+12:53:21.621 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.dzone.mancala.game.cdc.ContractVerifierTest]
+12:53:21.621 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.dzone.mancala.game.cdc.ContractVerifierTest]
+12:53:21.625 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@3a44431a testClass = ContractVerifierTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3c7f66c4 testClass = ContractVerifierTest, locations = '{}', classes = '{class com.dzone.mancala.game.MancalaGameApiApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{server.port=0, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[[ImportsContextCustomizer@194bcebf key = [com.dzone.mancala.game.controller.MancalaController, com.dzone.mancala.game.service.KalahaGameService]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@15761df8, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@45dd4eda, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@17259bc5, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2133814f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@78e94dcf], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS].
+12:53:21.626 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.dzone.mancala.game.cdc.ContractVerifierTest]
+12:53:21.626 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.dzone.mancala.game.cdc.ContractVerifierTest]
+12:53:21.673 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, server.port=0, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+2019-09-01 12:53:24.528  INFO [mancala-api,,,] 4004 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bdf39fc4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.6.RELEASE)
+
+2019-09-01 12:53:26.431  INFO [mancala-api,,,] 4004 --- [           main] c.d.m.game.cdc.ContractVerifierTest      : No active profile set, falling back to default profiles: default
+2019-09-01 12:53:27.560  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-01 12:53:27.561  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-01 12:53:27.572 DEBUG [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for repositories in packages com.dzone.mancala.game.
+2019-09-01 12:53:27.584 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [D:\mancala-game\mancala-microservice\mancala-api\target\classes\com\dzone\mancala\game\repository\KalahaGameRepository.class]
+2019-09-01 12:53:27.728  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 156ms. Found 1 repository interfaces.
+2019-09-01 12:53:28.154  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-01 12:53:28.156  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-01 12:53:28.175 DEBUG [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for repositories in packages com.dzone.mancala.game.
+2019-09-01 12:53:28.181 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [D:\mancala-game\mancala-microservice\mancala-api\target\classes\com\dzone\mancala\game\repository\KalahaGameRepository.class]
+2019-09-01 12:53:28.185  INFO [mancala-api,,,] 4004 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dzone.mancala.game.repository.KalahaGameRepository.
+2019-09-01 12:53:28.186  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-09-01 12:53:28.860  INFO [mancala-api,,,] 4004 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dd138640-b8d7-31e2-81e5-09b7feeb1743
+2019-09-01 12:53:30.048  INFO [mancala-api,,,] 4004 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bdf39fc4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-01 12:53:31.042  INFO [mancala-api,,,] 4004 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-09-01 12:53:31.078  INFO [mancala-api,,,] 4004 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-01 12:53:31.079  INFO [mancala-api,,,] 4004 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-01 12:53:31.255  INFO [mancala-api,,,] 4004 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-01 12:53:31.255  INFO [mancala-api,,,] 4004 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4816 ms
+2019-09-01 12:53:31.730  WARN [mancala-api,,,] 4004 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-09-01 12:53:31.731  INFO [mancala-api,,,] 4004 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-01 12:53:31.759  INFO [mancala-api,,,] 4004 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@21d8da75
+2019-09-01 12:53:35.019  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
+2019-09-01 12:53:35.059  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.058+0430 I CONTROL  [initandlisten] MongoDB starting : pid=4380 port=27017 dbpath=C:\Users\Talebi\AppData\Local\Temp\embedmongo-db-dd2a502b-433c-4153-b1eb-7ffed82372d7 64-bit host=DESKTOP-J4U3OC7
+2019-09-01 12:53:35.059  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.060+0430 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2019-09-01 12:53:35.060  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.060+0430 I CONTROL  [initandlisten] db version v3.5.5
+2019-09-01 12:53:35.060  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.060+0430 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+2019-09-01 12:53:35.061  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.060+0430 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-09-01 12:53:35.061  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.060+0430 I CONTROL  [initandlisten] modules: none
+2019-09-01 12:53:35.061  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.060+0430 I CONTROL  [initandlisten] build environment:
+2019-09-01 12:53:35.062  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.060+0430 I CONTROL  [initandlisten]     distarch: x86_64
+2019-09-01 12:53:35.062  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.060+0430 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-09-01 12:53:35.063  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.060+0430 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 27017 }, security: { authorization: "disabled" }, storage: { dbPath: "C:\Users\Talebi\AppData\Local\Temp\embedmongo-db-dd2a502b-433c-4153-b1eb-7ffed82372d7", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2019-09-01 12:53:35.063  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.063+0430 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7638M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2019-09-01 12:53:35.232  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.232+0430 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2019-09-01 12:53:35.233  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.233+0430 I CONTROL  [initandlisten] 
+2019-09-01 12:53:35.234  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.233+0430 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+2019-09-01 12:53:35.234  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.233+0430 I CONTROL  [initandlisten] **       Not recommended for production.
+2019-09-01 12:53:35.234  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.233+0430 I CONTROL  [initandlisten] 
+2019-09-01 12:53:35.841  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.842+0430 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/Talebi/AppData/Local/Temp/embedmongo-db-dd2a502b-433c-4153-b1eb-7ffed82372d7/diagnostic.data'
+2019-09-01 12:53:35.905  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.905+0430 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2019-09-01 12:53:35.905  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.905+0430 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2019-09-01 12:53:35.910  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.911+0430 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2019-09-01 12:53:35.913  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.912+0430 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2019-09-01 12:53:35.913  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:35.913+0430 I NETWORK  [thread1] waiting for connections on port 27017
+2019-09-01 12:53:35.914  INFO [mancala-api,,,] 4004 --- [           main] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@32cde414
+2019-09-01 12:53:37.843  INFO [mancala-api,,,] 4004 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-09-01 12:53:37.843  INFO [mancala-api,,,] 4004 --- [           main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-09-01 12:53:37.899  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:37.899+0430 I NETWORK  [thread1] connection accepted from 127.0.0.1:63033 #1 (1 connection now open)
+2019-09-01 12:53:37.914  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:37.914+0430 I NETWORK  [conn1] received client metadata from 127.0.0.1:63033 conn1: { driver: { name: "mongo-java-driver", version: "3.8.2" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/1.8.0_211-b12" }
+2019-09-01 12:53:37.955  INFO [mancala-api,,,] 4004 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+2019-09-01 12:53:37.960  INFO [mancala-api,,,] 4004 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 5, 5]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=2039300}
+2019-09-01 12:53:37.962  INFO [mancala-api,,,] 4004 --- [localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-09-01 12:53:41.364 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.dzone.mancala.game.repository.KalahaGameRepository…
+2019-09-01 12:53:41.511 DEBUG [mancala-api,,,] 4004 --- [           main] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class com.dzone.mancala.game.model.KalahaPit for index information.
+2019-09-01 12:53:41.515 DEBUG [mancala-api,,,] 4004 --- [           main] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class com.dzone.mancala.game.model.KalahaGame for index information.
+2019-09-01 12:53:41.612 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.dzone.mancala.game.repository.KalahaGameRepository.
+2019-09-01 12:53:41.878  INFO [mancala-api,,,] 4004 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2019-09-01 12:53:42.435  INFO [mancala-api,,,] 4004 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-01 12:53:42.564  WARN [mancala-api,,,] 4004 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-09-01 12:53:42.564  INFO [mancala-api,,,] 4004 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-01 12:53:43.415  INFO [mancala-api,,,] 4004 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-01 12:53:44.408 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
+2019-09-01 12:53:44.409 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.l.RedisMessageListenerContainer  : Started RedisMessageListenerContainer
+2019-09-01 12:53:46.969  INFO [mancala-api,,,] 4004 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-09-01 12:53:48.688  INFO [mancala-api,,,] 4004 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-01 12:53:48.739  INFO [mancala-api,,,] 4004 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-01 12:53:48.830  INFO [mancala-api,,,] 4004 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-01 12:53:49.178  INFO [mancala-api,,,] 4004 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63037 (http) with context path ''
+2019-09-01 12:53:49.183  INFO [mancala-api,,,] 4004 --- [           main] c.d.m.game.cdc.ContractVerifierTest      : Started ContractVerifierTest in 27.506 seconds (JVM running for 28.648)
+2019-09-01 12:53:50.740  INFO [mancala-api,,,] 4004 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-01 12:53:50.741  INFO [mancala-api,,,] 4004 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-01 12:53:50.802  INFO [mancala-api,,,] 4004 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 61 ms
+2019-09-01 12:53:50.886  INFO [mancala-api,8ead86c92316b71c,8ead86c92316b71c,true] 4004 --- [o-auto-1-exec-1] c.d.m.game.controller.MancalaController  : Invoking sow() endpoint. GameId: 5d414dcd24e4990006e7c900  , pit Index: 2
+2019-09-01 12:53:50.894  INFO [mancala-api,8ead86c92316b71c,8ead86c92316b71c,true] 4004 --- [o-auto-1-exec-1] c.d.m.game.controller.MancalaController  : sow is called for Game id:5d414dcd24e4990006e7c900 , pitIndex:2
+2019-09-01 12:53:50.934  INFO [mancala-api,8ead86c92316b71c,8ead86c92316b71c,true] 4004 --- [o-auto-1-exec-1] c.d.m.game.controller.MancalaController  : {
+  "id" : "5d414dcd24e4990006e7c900",
+  "pits" : [ {
+    "id" : 1,
+    "stones" : 6
+  }, {
+    "id" : 2,
+    "stones" : 0
+  }, {
+    "id" : 3,
+    "stones" : 7
+  }, {
+    "id" : 4,
+    "stones" : 7
+  }, {
+    "id" : 5,
+    "stones" : 7
+  }, {
+    "id" : 6,
+    "stones" : 7
+  }, {
+    "id" : 7,
+    "stones" : 1
+  }, {
+    "id" : 8,
+    "stones" : 7
+  }, {
+    "id" : 9,
+    "stones" : 6
+  }, {
+    "id" : 10,
+    "stones" : 6
+  }, {
+    "id" : 11,
+    "stones" : 6
+  }, {
+    "id" : 12,
+    "stones" : 6
+  }, {
+    "id" : 13,
+    "stones" : 6
+  }, {
+    "id" : 14,
+    "stones" : 0
+  } ],
+  "playerTurn" : "PlayerB"
+}
+2019-09-01 12:53:51.337  INFO [mancala-api,d6e8b2e964a4f861,d6e8b2e964a4f861,true] 4004 --- [o-auto-1-exec-2] c.d.m.game.controller.MancalaController  : Invoking create() endpoint... 
+KalahaGame{, pits=[1:6, 2:6, 3:6, 4:6, 5:6, 6:6, 7:0, 8:6, 9:6, 10:6, 11:6, 12:6, 13:6, 14:0], playerTurn=null}
+2019-09-01 12:53:51.341  INFO [mancala-api,d6e8b2e964a4f861,d6e8b2e964a4f861,true] 4004 --- [o-auto-1-exec-2] c.d.m.game.controller.MancalaController  : Game instance created. Id=5d414dcd24e4990006e7c900
+2019-09-01 12:53:51.350  INFO [mancala-api,d6e8b2e964a4f861,d6e8b2e964a4f861,true] 4004 --- [o-auto-1-exec-2] c.d.m.game.controller.MancalaController  : {
+  "id" : "5d414dcd24e4990006e7c900",
+  "pits" : [ {
+    "id" : 1,
+    "stones" : 6
+  }, {
+    "id" : 2,
+    "stones" : 6
+  }, {
+    "id" : 3,
+    "stones" : 6
+  }, {
+    "id" : 4,
+    "stones" : 6
+  }, {
+    "id" : 5,
+    "stones" : 6
+  }, {
+    "id" : 6,
+    "stones" : 6
+  }, {
+    "id" : 7,
+    "stones" : 0
+  }, {
+    "id" : 8,
+    "stones" : 6
+  }, {
+    "id" : 9,
+    "stones" : 6
+  }, {
+    "id" : 10,
+    "stones" : 6
+  }, {
+    "id" : 11,
+    "stones" : 6
+  }, {
+    "id" : 12,
+    "stones" : 6
+  }, {
+    "id" : 13,
+    "stones" : 6
+  }, {
+    "id" : 14,
+    "stones" : 0
+  } ],
+  "playerTurn" : null
+}
+2019-09-01 12:53:51.378 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
+2019-09-01 12:53:51.379  INFO [mancala-api,,,] 4004 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-01 12:53:51.397  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:51.398+0430 I -        [conn1] end connection 127.0.0.1:63033 (1 connection now open)
+2019-09-01 12:53:51.398  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:51.399+0430 I NETWORK  [thread1] connection accepted from 127.0.0.1:63044 #2 (1 connection now open)
+2019-09-01 12:53:51.399  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:51.400+0430 I COMMAND  [conn2] terminating, shutdown command received
+2019-09-01 12:53:51.400  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:51.401+0430 I NETWORK  [conn2] shutdown: going to close listening sockets...
+2019-09-01 12:53:51.401  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:51.402+0430 I NETWORK  [conn2] closing listening socket: 508
+2019-09-01 12:53:51.402  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:51.403+0430 I NETWORK  [conn2] shutdown: going to flush diaglog...
+2019-09-01 12:53:51.403  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:51.403+0430 I FTDC     [conn2] Shutting down full-time diagnostic data capture
+2019-09-01 12:53:51.422  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:51.423+0430 I STORAGE  [conn2] WiredTigerKVEngine shutting down
+2019-09-01 12:53:51.580  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:51.580+0430 I STORAGE  [conn2] shutdown: removing fs lock...
+2019-09-01 12:53:51.580  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:51.581+0430 I CONTROL  [conn2] now exiting
+2019-09-01 12:53:51.581  INFO [mancala-api,,,] 4004 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:53:51.581+0430 I CONTROL  [conn2] shutting down with code:0
+2019-09-01 12:53:51.606  WARN [mancala-api,,,] 4004 --- [ender@3a63d248}] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-09-01 12:53:51.606  INFO [mancala-api,,,] 4004 --- [ender@3a63d248}] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-01 12:53:51.607  INFO [mancala-api,,,] 4004 --- [ender@3a63d248}] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@54c766f9
+2019-09-01 12:53:51.753  INFO [mancala-api,,,] 4004 --- [ender@3a63d248}] c.netflix.config.ChainedDynamicProperty  : Flipping property: localhost.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-09-01 12:53:51.788  INFO [mancala-api,,,] 4004 --- [ender@3a63d248}] c.netflix.loadbalancer.BaseLoadBalancer  : Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-09-01 12:53:51.801  INFO [mancala-api,,,] 4004 --- [ender@3a63d248}] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-09-01 12:53:51.809  INFO [mancala-api,,,] 4004 --- [ender@3a63d248}] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:com.netflix.loadbalancer.ConfigurationBasedServerList@3f5fa479
+2019-09-01 12:53:51.857  WARN [mancala-api,,,] 4004 --- [ender@3a63d248}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'modelBuilderPluginRegistry': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2019-09-01 12:53:52.505  INFO [mancala-api,,,] 4004 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-09-01 12:53:52.508  INFO [mancala-api,,,] 4004 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-09-01 12:53:52.514  WARN [mancala-api,,,] 4004 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.513 s - in com.dzone.mancala.game.cdc.ContractVerifierTest
+[INFO] Running com.dzone.mancala.game.controller.KalahaGameControllerTests
+2019-09-01 12:53:52.527  INFO [mancala-api,,,] 4004 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.dzone.mancala.game.controller.KalahaGameControllerTests], using SpringBootContextLoader
+2019-09-01 12:53:52.528  INFO [mancala-api,,,] 4004 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.dzone.mancala.game.controller.KalahaGameControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-01 12:53:52.528  INFO [mancala-api,,,] 4004 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.dzone.mancala.game.controller.KalahaGameControllerTests]: KalahaGameControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-01 12:53:52.550  INFO [mancala-api,,,] 4004 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.dzone.mancala.game.MancalaGameApiApplication for test class com.dzone.mancala.game.controller.KalahaGameControllerTests
+2019-09-01 12:53:52.553  INFO [mancala-api,,,] 4004 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-01 12:53:52.553  INFO [mancala-api,,,] 4004 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@223e51e4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e08f0cd, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@b768e4d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ab7ac41, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5ad67d82, org.springframework.test.context.transaction.TransactionalTestExecutionListener@301608d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c3a8246, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@bd8f424, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@620ba2b0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6a06b374, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2c634c0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4e739968]
+2019-09-01 12:53:54.685  INFO [mancala-api,,,] 4004 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bdf39fc4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.6.RELEASE)
+
+2019-09-01 12:53:56.708  INFO [mancala-api,,,] 4004 --- [           main] c.d.m.g.c.KalahaGameControllerTests      : No active profile set, falling back to default profiles: default
+2019-09-01 12:53:57.489  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-01 12:53:57.489  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-01 12:53:57.490 DEBUG [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for repositories in packages com.dzone.mancala.game.
+2019-09-01 12:53:57.508 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [D:\mancala-game\mancala-microservice\mancala-api\target\classes\com\dzone\mancala\game\repository\KalahaGameRepository.class]
+2019-09-01 12:53:57.520  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 1 repository interfaces.
+2019-09-01 12:53:57.618  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-01 12:53:57.618  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-01 12:53:57.619 DEBUG [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for repositories in packages com.dzone.mancala.game.
+2019-09-01 12:53:57.627 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [D:\mancala-game\mancala-microservice\mancala-api\target\classes\com\dzone\mancala\game\repository\KalahaGameRepository.class]
+2019-09-01 12:53:57.628  INFO [mancala-api,,,] 4004 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dzone.mancala.game.repository.KalahaGameRepository.
+2019-09-01 12:53:57.628  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-09-01 12:53:57.772  INFO [mancala-api,,,] 4004 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c7b38844-a4b8-3b79-94c5-175c4790dfdd
+2019-09-01 12:53:57.969  INFO [mancala-api,,,] 4004 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bdf39fc4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-01 12:53:58.280  INFO [mancala-api,,,] 4004 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-09-01 12:53:58.285  INFO [mancala-api,,,] 4004 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-01 12:53:58.286  INFO [mancala-api,,,] 4004 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-01 12:53:58.303  INFO [mancala-api,,,] 4004 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-01 12:53:58.303  INFO [mancala-api,,,] 4004 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1592 ms
+2019-09-01 12:54:00.399  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
+2019-09-01 12:54:00.519  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.518+0430 I CONTROL  [initandlisten] MongoDB starting : pid=5972 port=27017 dbpath=C:\Users\Talebi\AppData\Local\Temp\embedmongo-db-2709d3ca-662c-4b7b-b4b1-9e55bca95bb3 64-bit host=DESKTOP-J4U3OC7
+2019-09-01 12:54:00.520  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.519+0430 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2019-09-01 12:54:00.520  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.519+0430 I CONTROL  [initandlisten] db version v3.5.5
+2019-09-01 12:54:00.520  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.519+0430 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+2019-09-01 12:54:00.520  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.519+0430 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-09-01 12:54:00.521  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.519+0430 I CONTROL  [initandlisten] modules: none
+2019-09-01 12:54:00.521  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.519+0430 I CONTROL  [initandlisten] build environment:
+2019-09-01 12:54:00.521  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.519+0430 I CONTROL  [initandlisten]     distarch: x86_64
+2019-09-01 12:54:00.521  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.519+0430 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-09-01 12:54:00.522  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.519+0430 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 27017 }, security: { authorization: "disabled" }, storage: { dbPath: "C:\Users\Talebi\AppData\Local\Temp\embedmongo-db-2709d3ca-662c-4b7b-b4b1-9e55bca95bb3", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2019-09-01 12:54:00.522  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.521+0430 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7638M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2019-09-01 12:54:00.640  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.639+0430 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2019-09-01 12:54:00.640  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.640+0430 I CONTROL  [initandlisten] 
+2019-09-01 12:54:00.640  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.640+0430 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+2019-09-01 12:54:00.641  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.640+0430 I CONTROL  [initandlisten] **       Not recommended for production.
+2019-09-01 12:54:00.641  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:00.640+0430 I CONTROL  [initandlisten] 
+2019-09-01 12:54:01.259  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:01.259+0430 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/Talebi/AppData/Local/Temp/embedmongo-db-2709d3ca-662c-4b7b-b4b1-9e55bca95bb3/diagnostic.data'
+2019-09-01 12:54:01.335  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:01.334+0430 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2019-09-01 12:54:01.335  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:01.334+0430 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2019-09-01 12:54:01.339  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:01.339+0430 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2019-09-01 12:54:01.340  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:01.340+0430 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2019-09-01 12:54:01.341  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:01.341+0430 I NETWORK  [thread1] waiting for connections on port 27017
+2019-09-01 12:54:01.342  INFO [mancala-api,,,] 4004 --- [           main] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@597050fa
+2019-09-01 12:54:01.362  INFO [mancala-api,,,] 4004 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-09-01 12:54:01.362  INFO [mancala-api,,,] 4004 --- [           main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-09-01 12:54:01.365  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:01.365+0430 I NETWORK  [thread1] connection accepted from 127.0.0.1:63056 #1 (1 connection now open)
+2019-09-01 12:54:01.366  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:01.366+0430 I NETWORK  [conn1] received client metadata from 127.0.0.1:63056 conn1: { driver: { name: "mongo-java-driver", version: "3.8.2" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/1.8.0_211-b12" }
+2019-09-01 12:54:01.370  INFO [mancala-api,,,] 4004 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:1}] to localhost:27017
+2019-09-01 12:54:01.372  INFO [mancala-api,,,] 4004 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 5, 5]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=967200}
+2019-09-01 12:54:01.373  INFO [mancala-api,,,] 4004 --- [localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-09-01 12:54:03.002 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.dzone.mancala.game.repository.KalahaGameRepository…
+2019-09-01 12:54:03.041 DEBUG [mancala-api,,,] 4004 --- [           main] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class com.dzone.mancala.game.model.KalahaPit for index information.
+2019-09-01 12:54:03.043 DEBUG [mancala-api,,,] 4004 --- [           main] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class com.dzone.mancala.game.model.KalahaGame for index information.
+2019-09-01 12:54:03.046 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.dzone.mancala.game.repository.KalahaGameRepository.
+2019-09-01 12:54:03.188  INFO [mancala-api,,,] 4004 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2019-09-01 12:54:03.496  INFO [mancala-api,,,] 4004 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-01 12:54:03.558  WARN [mancala-api,,,] 4004 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-09-01 12:54:03.559  INFO [mancala-api,,,] 4004 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-01 12:54:04.040  INFO [mancala-api,,,] 4004 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-01 12:54:04.507 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
+2019-09-01 12:54:04.507 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.l.RedisMessageListenerContainer  : Started RedisMessageListenerContainer
+2019-09-01 12:54:04.724  INFO [mancala-api,,,] 4004 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2019-09-01 12:54:04.725  INFO [mancala-api,,,] 4004 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-09-01 12:54:04.745  INFO [mancala-api,,,] 4004 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 20 ms
+2019-09-01 12:54:06.713  INFO [mancala-api,,,] 4004 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-09-01 12:54:08.124  INFO [mancala-api,,,] 4004 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-01 12:54:08.127  INFO [mancala-api,,,] 4004 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-01 12:54:08.139  INFO [mancala-api,,,] 4004 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-01 12:54:08.199  INFO [mancala-api,,,] 4004 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63057 (http) with context path ''
+2019-09-01 12:54:08.202  INFO [mancala-api,,,] 4004 --- [           main] c.d.m.g.c.KalahaGameControllerTests      : Started KalahaGameControllerTests in 15.645 seconds (JVM running for 47.667)
+2019-09-01 12:54:08.248  INFO [mancala-api,67477d8eee1acd87,67477d8eee1acd87,true] 4004 --- [           main] c.d.m.game.controller.MancalaController  : Invoking create() endpoint... 
+KalahaGame{, pits=[1:6, 2:6, 3:6, 4:6, 5:6, 6:6, 7:0, 8:6, 9:6, 10:6, 11:6, 12:6, 13:6, 14:0], playerTurn=null}
+2019-09-01 12:54:08.248  INFO [mancala-api,67477d8eee1acd87,67477d8eee1acd87,true] 4004 --- [           main] c.d.m.game.controller.MancalaController  : Game instance created. Id=5d414dcd24e4990006e7c900
+2019-09-01 12:54:08.252  INFO [mancala-api,67477d8eee1acd87,67477d8eee1acd87,true] 4004 --- [           main] c.d.m.game.controller.MancalaController  : {
+  "id" : "5d414dcd24e4990006e7c900",
+  "pits" : [ {
+    "id" : 1,
+    "stones" : 6
+  }, {
+    "id" : 2,
+    "stones" : 6
+  }, {
+    "id" : 3,
+    "stones" : 6
+  }, {
+    "id" : 4,
+    "stones" : 6
+  }, {
+    "id" : 5,
+    "stones" : 6
+  }, {
+    "id" : 6,
+    "stones" : 6
+  }, {
+    "id" : 7,
+    "stones" : 0
+  }, {
+    "id" : 8,
+    "stones" : 6
+  }, {
+    "id" : 9,
+    "stones" : 6
+  }, {
+    "id" : 10,
+    "stones" : 6
+  }, {
+    "id" : 11,
+    "stones" : 6
+  }, {
+    "id" : 12,
+    "stones" : 6
+  }, {
+    "id" : 13,
+    "stones" : 6
+  }, {
+    "id" : 14,
+    "stones" : 0
+  } ],
+  "playerTurn" : null
+}
+2019-09-01 12:54:08.299  INFO [mancala-api,e905b8227dca26b2,e905b8227dca26b2,true] 4004 --- [           main] c.d.m.game.controller.MancalaController  : Invoking sow() endpoint. GameId: 5d414dcd24e4990006e7c902  , pit Index: 2
+2019-09-01 12:54:08.331  INFO [mancala-api,d61f17d64062f2c2,d61f17d64062f2c2,true] 4004 --- [           main] c.d.m.game.controller.MancalaController  : Invoking sow() endpoint. GameId: 5d414dcd24e4990006e7c900  , pit Index: 7
+2019-09-01 12:54:08.341  INFO [mancala-api,de9ccf0b9923adbf,de9ccf0b9923adbf,true] 4004 --- [           main] c.d.m.game.controller.MancalaController  : Invoking sow() endpoint. GameId: 5d414dcd24e4990006e7c900  , pit Index: 2
+2019-09-01 12:54:08.342  INFO [mancala-api,de9ccf0b9923adbf,de9ccf0b9923adbf,true] 4004 --- [           main] c.d.m.game.controller.MancalaController  : sow is called for Game id:5d414dcd24e4990006e7c900 , pitIndex:2
+2019-09-01 12:54:08.345  INFO [mancala-api,de9ccf0b9923adbf,de9ccf0b9923adbf,true] 4004 --- [           main] c.d.m.game.controller.MancalaController  : {
+  "id" : "5d414dcd24e4990006e7c900",
+  "pits" : [ {
+    "id" : 1,
+    "stones" : 6
+  }, {
+    "id" : 2,
+    "stones" : 0
+  }, {
+    "id" : 3,
+    "stones" : 7
+  }, {
+    "id" : 4,
+    "stones" : 7
+  }, {
+    "id" : 5,
+    "stones" : 7
+  }, {
+    "id" : 6,
+    "stones" : 7
+  }, {
+    "id" : 7,
+    "stones" : 1
+  }, {
+    "id" : 8,
+    "stones" : 7
+  }, {
+    "id" : 9,
+    "stones" : 6
+  }, {
+    "id" : 10,
+    "stones" : 6
+  }, {
+    "id" : 11,
+    "stones" : 6
+  }, {
+    "id" : 12,
+    "stones" : 6
+  }, {
+    "id" : 13,
+    "stones" : 6
+  }, {
+    "id" : 14,
+    "stones" : 0
+  } ],
+  "playerTurn" : "PlayerB"
+}
+2019-09-01 12:54:08.355 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
+2019-09-01 12:54:08.355  INFO [mancala-api,,,] 4004 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-01 12:54:08.358  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:08.358+0430 I -        [conn1] end connection 127.0.0.1:63056 (1 connection now open)
+2019-09-01 12:54:08.360  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:08.360+0430 I NETWORK  [thread1] connection accepted from 127.0.0.1:63062 #2 (1 connection now open)
+2019-09-01 12:54:08.360  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:08.360+0430 I COMMAND  [conn2] terminating, shutdown command received
+2019-09-01 12:54:08.361  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:08.361+0430 I NETWORK  [conn2] shutdown: going to close listening sockets...
+2019-09-01 12:54:08.361  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:08.361+0430 I NETWORK  [conn2] closing listening socket: 504
+2019-09-01 12:54:08.361  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:08.361+0430 I NETWORK  [conn2] shutdown: going to flush diaglog...
+2019-09-01 12:54:08.361  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:08.361+0430 I FTDC     [conn2] Shutting down full-time diagnostic data capture
+2019-09-01 12:54:08.374  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:08.374+0430 I STORAGE  [conn2] WiredTigerKVEngine shutting down
+2019-09-01 12:54:08.498  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:08.499+0430 I STORAGE  [conn2] shutdown: removing fs lock...
+2019-09-01 12:54:08.499  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:08.499+0430 I CONTROL  [conn2] now exiting
+2019-09-01 12:54:08.499  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:08.499+0430 I CONTROL  [conn2] shutting down with code:0
+2019-09-01 12:54:08.500  INFO [mancala-api,,,] 4004 --- [      Thread-16] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:08.499+0430 I CONTROL  [initandlisten] shutting down with code:0
+2019-09-01 12:54:09.140  WARN [mancala-api,,,] 4004 --- [Sender@1132c14}] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-09-01 12:54:09.140  INFO [mancala-api,,,] 4004 --- [Sender@1132c14}] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-01 12:54:09.141  INFO [mancala-api,,,] 4004 --- [Sender@1132c14}] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@760ebe40
+2019-09-01 12:54:09.150  WARN [mancala-api,,,] 4004 --- [Sender@1132c14}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'httpClient' defined in org.springframework.cloud.netflix.ribbon.apache.HttpClientRibbonConfiguration$ApacheHttpClientConfiguration: Unsatisfied dependency expressed through method 'httpClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'apacheHttpClientFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2019-09-01 12:54:09.745  INFO [mancala-api,,,] 4004 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.16 s - in com.dzone.mancala.game.controller.KalahaGameControllerTests
+[INFO] Running com.dzone.mancala.game.model.KalahaGameTests
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.dzone.mancala.game.model.KalahaGameTests
+[INFO] Running com.dzone.mancala.game.repository.KalahaGameRepositoryTests
+2019-09-01 12:54:09.795  INFO [mancala-api,,,] 4004 --- [           main] t.a.d.m.DataMongoTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.dzone.mancala.game.repository.KalahaGameRepositoryTests], using SpringBootContextLoader
+2019-09-01 12:54:09.796  INFO [mancala-api,,,] 4004 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.dzone.mancala.game.repository.KalahaGameRepositoryTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-01 12:54:09.797  INFO [mancala-api,,,] 4004 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.dzone.mancala.game.repository.KalahaGameRepositoryTests]: KalahaGameRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-01 12:54:09.817  INFO [mancala-api,,,] 4004 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.dzone.mancala.game.MancalaGameApiApplication for test class com.dzone.mancala.game.repository.KalahaGameRepositoryTests
+2019-09-01 12:54:09.817  INFO [mancala-api,,,] 4004 --- [           main] t.a.d.m.DataMongoTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-01 12:54:09.818  INFO [mancala-api,,,] 4004 --- [           main] t.a.d.m.DataMongoTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6183dd2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5fe9851f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3b5299a3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@393d1a05, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7e8c465d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6d5ef5ee, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@426ee667, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1352211d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@ff03384, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@159b4611, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2073d71b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@22ab40c1]
+2019-09-01 12:54:11.828  INFO [mancala-api,,,] 4004 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bdf39fc4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.6.RELEASE)
+
+2019-09-01 12:54:13.804  INFO [mancala-api,,,] 4004 --- [           main] c.d.m.g.r.KalahaGameRepositoryTests      : No active profile set, falling back to default profiles: default
+2019-09-01 12:54:13.895  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-01 12:54:13.895  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-01 12:54:13.895 DEBUG [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for repositories in packages com.dzone.mancala.game.
+2019-09-01 12:54:13.905 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [D:\mancala-game\mancala-microservice\mancala-api\target\classes\com\dzone\mancala\game\repository\KalahaGameRepository.class]
+2019-09-01 12:54:13.912  INFO [mancala-api,,,] 4004 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 1 repository interfaces.
+2019-09-01 12:54:14.356  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
+2019-09-01 12:54:14.455  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.454+0430 I CONTROL  [initandlisten] MongoDB starting : pid=15600 port=27017 dbpath=C:\Users\Talebi\AppData\Local\Temp\embedmongo-db-89ebc214-be0c-4d92-82c8-59bd41b340fd 64-bit host=DESKTOP-J4U3OC7
+2019-09-01 12:54:14.455  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.455+0430 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2019-09-01 12:54:14.456  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.455+0430 I CONTROL  [initandlisten] db version v3.5.5
+2019-09-01 12:54:14.456  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.455+0430 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+2019-09-01 12:54:14.456  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.455+0430 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-09-01 12:54:14.457  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.455+0430 I CONTROL  [initandlisten] modules: none
+2019-09-01 12:54:14.457  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.455+0430 I CONTROL  [initandlisten] build environment:
+2019-09-01 12:54:14.457  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.455+0430 I CONTROL  [initandlisten]     distarch: x86_64
+2019-09-01 12:54:14.457  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.455+0430 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-09-01 12:54:14.458  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.455+0430 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 27017 }, security: { authorization: "disabled" }, storage: { dbPath: "C:\Users\Talebi\AppData\Local\Temp\embedmongo-db-89ebc214-be0c-4d92-82c8-59bd41b340fd", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2019-09-01 12:54:14.458  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.457+0430 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7638M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2019-09-01 12:54:14.577  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.577+0430 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2019-09-01 12:54:14.578  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.577+0430 I CONTROL  [initandlisten] 
+2019-09-01 12:54:14.578  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.577+0430 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+2019-09-01 12:54:14.578  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.577+0430 I CONTROL  [initandlisten] **       Not recommended for production.
+2019-09-01 12:54:14.579  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:14.577+0430 I CONTROL  [initandlisten] 
+2019-09-01 12:54:15.132  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.133+0430 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/Talebi/AppData/Local/Temp/embedmongo-db-89ebc214-be0c-4d92-82c8-59bd41b340fd/diagnostic.data'
+2019-09-01 12:54:15.195  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.195+0430 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2019-09-01 12:54:15.195  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.195+0430 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2019-09-01 12:54:15.199  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.200+0430 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2019-09-01 12:54:15.200  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.201+0430 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2019-09-01 12:54:15.201  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.201+0430 I NETWORK  [thread1] waiting for connections on port 27017
+2019-09-01 12:54:15.201  INFO [mancala-api,,,] 4004 --- [           main] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@6c84e4ec
+2019-09-01 12:54:15.207  INFO [mancala-api,,,] 4004 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-09-01 12:54:15.207  INFO [mancala-api,,,] 4004 --- [           main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-09-01 12:54:15.210  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.210+0430 I NETWORK  [thread1] connection accepted from 127.0.0.1:63076 #1 (1 connection now open)
+2019-09-01 12:54:15.211  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.211+0430 I NETWORK  [conn1] received client metadata from 127.0.0.1:63076 conn1: { driver: { name: "mongo-java-driver", version: "3.8.2" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/1.8.0_211-b12" }
+2019-09-01 12:54:15.214  INFO [mancala-api,,,] 4004 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:1}] to localhost:27017
+2019-09-01 12:54:15.215  INFO [mancala-api,,,] 4004 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 5, 5]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=827600}
+2019-09-01 12:54:15.216  INFO [mancala-api,,,] 4004 --- [localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-09-01 12:54:15.267 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.dzone.mancala.game.repository.KalahaGameRepository…
+2019-09-01 12:54:15.274 DEBUG [mancala-api,,,] 4004 --- [           main] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class com.dzone.mancala.game.model.KalahaPit for index information.
+2019-09-01 12:54:15.275 DEBUG [mancala-api,,,] 4004 --- [           main] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class com.dzone.mancala.game.model.KalahaGame for index information.
+2019-09-01 12:54:15.277 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.dzone.mancala.game.repository.KalahaGameRepository.
+2019-09-01 12:54:15.314  INFO [mancala-api,,,] 4004 --- [           main] c.d.m.g.r.KalahaGameRepositoryTests      : Started KalahaGameRepositoryTests in 5.493 seconds (JVM running for 54.779)
+2019-09-01 12:54:15.381 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.data.mongodb.core.MongoTemplate      : Remove using query: { } in collection: games.
+2019-09-01 12:54:15.400  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.400+0430 I NETWORK  [thread1] connection accepted from 127.0.0.1:63077 #2 (2 connections now open)
+2019-09-01 12:54:15.400  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.401+0430 I NETWORK  [conn2] received client metadata from 127.0.0.1:63077 conn2: { driver: { name: "mongo-java-driver", version: "3.8.2" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/1.8.0_211-b12" }
+2019-09-01 12:54:15.402  INFO [mancala-api,,,] 4004 --- [           main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:2}] to localhost:27017
+2019-09-01 12:54:15.445 DEBUG [mancala-api,,,] 4004 --- [           main] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class com.dzone.mancala.game.model.KalahaHouse for index information.
+2019-09-01 12:54:15.455 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.data.mongodb.core.MongoTemplate      : Inserting Document containing fields: [pits, _class] in collection: games
+2019-09-01 12:54:15.514 DEBUG [mancala-api,,,] 4004 --- [           main] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: Document{{}} for class: class com.dzone.mancala.game.model.KalahaGame in collection: games
+2019-09-01 12:54:15.571  INFO [mancala-api,,,] 4004 --- [           main] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:4, serverValue:2}] to localhost:27017 because the pool has been closed.
+2019-09-01 12:54:15.573  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.573+0430 I -        [conn1] end connection 127.0.0.1:63076 (2 connections now open)
+2019-09-01 12:54:15.573  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.573+0430 I -        [conn2] end connection 127.0.0.1:63077 (2 connections now open)
+2019-09-01 12:54:15.574  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.575+0430 I NETWORK  [thread1] connection accepted from 127.0.0.1:63078 #3 (1 connection now open)
+2019-09-01 12:54:15.575  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.575+0430 I COMMAND  [conn3] terminating, shutdown command received
+2019-09-01 12:54:15.575  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.575+0430 I NETWORK  [conn3] shutdown: going to close listening sockets...
+2019-09-01 12:54:15.575  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.575+0430 I NETWORK  [conn3] closing listening socket: 492
+2019-09-01 12:54:15.575  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.575+0430 I NETWORK  [conn3] shutdown: going to flush diaglog...
+2019-09-01 12:54:15.576  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.575+0430 I FTDC     [conn3] Shutting down full-time diagnostic data capture
+2019-09-01 12:54:15.576  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.576+0430 I STORAGE  [conn3] WiredTigerKVEngine shutting down
+2019-09-01 12:54:15.724  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.725+0430 I STORAGE  [conn3] shutdown: removing fs lock...
+2019-09-01 12:54:15.725  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.725+0430 I CONTROL  [conn3] now exiting
+2019-09-01 12:54:15.725  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.725+0430 I CONTROL  [conn3] shutting down with code:0
+2019-09-01 12:54:15.725  INFO [mancala-api,,,] 4004 --- [      Thread-25] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-09-01T12:54:15.725+0430 I CONTROL  [initandlisten] shutting down with code:0
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.037 s - in com.dzone.mancala.game.repository.KalahaGameRepositoryTests
+2019-09-01 12:54:15.854  INFO [mancala-api,,,] 4004 --- [      Thread-11] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- spring-cloud-contract-maven-plugin:2.1.2.RELEASE:generateStubs (default-generateStubs) @ mancala-api ---
+[INFO] Files matching this pattern will be excluded from stubs generation []
+[INFO] Building jar: D:\mancala-game\mancala-microservice\mancala-api\target\mancala-api-0.0.1-SNAPSHOT-stubs.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ mancala-api ---
+[INFO] Building jar: D:\mancala-game\mancala-microservice\mancala-api\target\mancala-api-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.6.RELEASE:repackage (repackage) @ mancala-api ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ mancala-api ---
+[INFO] Installing D:\mancala-game\mancala-microservice\mancala-api\target\mancala-api-0.0.1-SNAPSHOT.jar to C:\Users\Talebi\.m2\repository\com\dzone\mancalagame\mancala-api\0.0.1-SNAPSHOT\mancala-api-0.0.1-SNAPSHOT.jar
+[INFO] Installing D:\mancala-game\mancala-microservice\mancala-api\pom.xml to C:\Users\Talebi\.m2\repository\com\dzone\mancalagame\mancala-api\0.0.1-SNAPSHOT\mancala-api-0.0.1-SNAPSHOT.pom
+[INFO] Installing D:\mancala-game\mancala-microservice\mancala-api\target\mancala-api-0.0.1-SNAPSHOT-stubs.jar to C:\Users\Talebi\.m2\repository\com\dzone\mancalagame\mancala-api\0.0.1-SNAPSHOT\mancala-api-0.0.1-SNAPSHOT-stubs.jar
+[INFO] 
+[INFO] -----------------< com.dzone.mancalagame:mancala-web >------------------
+[INFO] Building mancala-web 0.1.0                                         [2/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ mancala-web ---
+[INFO] Deleting D:\mancala-game\mancala-microservice\mancala-web\target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ mancala-web ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ mancala-web ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to D:\mancala-game\mancala-microservice\mancala-web\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ mancala-web ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ mancala-web ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to D:\mancala-game\mancala-microservice\mancala-web\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ mancala-web ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.dzone.mancala.web.client.CDCApplicationTests
+12:54:29.162 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.dzone.mancala.web.client.CDCApplicationTests]
+12:54:29.173 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+12:54:29.189 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+12:54:29.234 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.dzone.mancala.web.client.CDCApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+12:54:29.262 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.dzone.mancala.web.client.CDCApplicationTests], using SpringBootContextLoader
+12:54:29.266 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dzone.mancala.web.client.CDCApplicationTests]: class path resource [com/dzone/mancala/web/client/CDCApplicationTests-context.xml] does not exist
+12:54:29.266 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dzone.mancala.web.client.CDCApplicationTests]: class path resource [com/dzone/mancala/web/client/CDCApplicationTestsContext.groovy] does not exist
+12:54:29.267 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.dzone.mancala.web.client.CDCApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:54:29.368 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.dzone.mancala.web.client.CDCApplicationTests]
+12:54:29.577 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.dzone.mancala.web.client.CDCApplicationTests]: using defaults.
+12:54:29.577 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener, org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener]
+12:54:29.597 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+12:54:29.597 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+12:54:29.598 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@37858383, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4e268090, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1bb266b3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@306cf3ea, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2beee7ff, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5136d012, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5939a379, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@e1de817, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@52102734, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3541cb24, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener@2177849e, org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener@40cb8df7]
+12:54:29.602 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.dzone.mancala.web.client.CDCApplicationTests]
+12:54:29.602 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.dzone.mancala.web.client.CDCApplicationTests]
+12:54:29.604 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.dzone.mancala.web.client.CDCApplicationTests]
+12:54:29.604 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.dzone.mancala.web.client.CDCApplicationTests]
+12:54:29.605 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.dzone.mancala.web.client.CDCApplicationTests]
+12:54:29.605 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.dzone.mancala.web.client.CDCApplicationTests]
+12:54:29.610 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@73ee04c8 testClass = CDCApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7671cb68 testClass = CDCApplicationTests, locations = '{}', classes = '{class com.dzone.mancala.web.MancalaGameWebApplication, class com.dzone.mancala.web.MancalaGameWebApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@49dc7102 key = [org.springframework.cloud.contract.stubrunner.spring.StubRunnerConfiguration, org.springframework.cloud.contract.stubrunner.spring.cloud.StubRunnerSpringCloudAutoConfiguration, org.springframework.cloud.contract.stubrunner.spring.cloud.ribbon.StubRunnerRibbonAutoConfiguration, org.springframework.cloud.contract.stubrunner.messaging.integration.StubRunnerIntegrationConfiguration, org.springframework.cloud.contract.stubrunner.messaging.stream.StubRunnerStreamConfiguration, org.springframework.cloud.contract.stubrunner.spring.cloud.zookeeper.StubRunnerSpringCloudZookeeperAutoConfiguration, org.springframework.cloud.contract.stubrunner.spring.cloud.eureka.StubRunnerSpringCloudEurekaAutoConfiguration, org.springframework.cloud.contract.stubrunner.spring.cloud.consul.StubRunnerSpringCloudConsulAutoConfiguration, org.springframework.cloud.contract.stubrunner.messaging.StubRunnerStreamsIntegrationAutoConfiguration, org.springframework.cloud.contract.stubrunner.messaging.camel.StubRunnerCamelConfiguration, org.springframework.cloud.contract.verifier.messaging.stream.ContractVerifierStreamAutoConfiguration, org.springframework.cloud.contract.verifier.messaging.integration.ContractVerifierIntegrationConfiguration, org.springframework.cloud.contract.verifier.messaging.amqp.ContractVerifierAmqpAutoConfiguration, org.springframework.cloud.contract.verifier.messaging.amqp.RabbitMockConnectionFactoryAutoConfiguration, org.springframework.cloud.contract.verifier.messaging.camel.ContractVerifierCamelConfiguration, org.springframework.cloud.contract.verifier.messaging.noop.NoOpContractVerifierAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3d299e3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6f3b5d16, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@71c8becc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3b561694, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@78dd667e], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS].
+12:54:29.654 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+2019-09-01 12:54:33.323  INFO [mancala-web,,,] 10700 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8240299c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.6.RELEASE)
+
+2019-09-01 12:54:35.517  INFO [mancala-web,,,] 10700 --- [           main] c.d.m.web.client.CDCApplicationTests     : No active profile set, falling back to default profiles: default
+2019-09-01 12:54:37.510  INFO [mancala-web,,,] 10700 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b182697d-5ed3-3ed3-9f53-9783bc0cdf09
+2019-09-01 12:54:38.078  INFO [mancala-web,,,] 10700 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8240299c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-01 12:54:38.136  INFO [mancala-web,,,] 10700 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.contract.stubrunner.spring.cloud.StubRunnerSpringCloudAutoConfiguration' of type [org.springframework.cloud.contract.stubrunner.spring.cloud.StubRunnerSpringCloudAutoConfiguration$$EnhancerBySpringCGLIB$$a7d97367] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-01 12:54:39.194  WARN [mancala-web,,,] 10700 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-09-01 12:54:39.194  INFO [mancala-web,,,] 10700 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-01 12:54:39.204  WARN [mancala-web,,,] 10700 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-09-01 12:54:39.205  INFO [mancala-web,,,] 10700 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-01 12:54:40.670  INFO [mancala-web,,,] 10700 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-01 12:54:46.521  INFO [mancala-web,,,] 10700 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-09-01 12:54:46.607  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
+2019-09-01 12:54:46.616  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
+2019-09-01 12:54:46.987  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Desired version is [+] - will try to resolve the latest version
+2019-09-01 12:54:47.043  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
+2019-09-01 12:54:47.068  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [com.dzone.mancalagame:mancala-api:jar:stubs:0.0.1-SNAPSHOT] to C:\Users\Talebi\.m2\repository\com\dzone\mancalagame\mancala-api\0.0.1-SNAPSHOT\mancala-api-0.0.1-SNAPSHOT-stubs.jar
+2019-09-01 12:54:47.859  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/C:/Users/Talebi/.m2/repository/com/dzone/mancalagame/mancala-api/0.0.1-SNAPSHOT/mancala-api-0.0.1-SNAPSHOT-stubs.jar]
+2019-09-01 12:54:47.913  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [C:\Users\Talebi\AppData\Local\Temp\contracts2749198743807829830]
+2019-09-01 12:54:51.518  INFO [mancala-web,,,] 10700 --- [           main] wiremock.org.eclipse.jetty.util.log      : Logging initialized @23341ms
+2019-09-01 12:54:51.651  INFO [mancala-web,,,] 10700 --- [           main] w.org.eclipse.jetty.server.Server        : jetty-9.2.z-SNAPSHOT
+2019-09-01 12:54:51.679  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@3700994c{/__admin,null,AVAILABLE}
+2019-09-01 12:54:51.680  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@2d3bb944{/,null,AVAILABLE}
+2019-09-01 12:54:51.706  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.s.NetworkTrafficServerConnector  : Started NetworkTrafficServerConnector@5ea2bde{HTTP/1.1}{0.0.0.0:8080}
+2019-09-01 12:54:51.706  INFO [mancala-web,,,] 10700 --- [           main] w.org.eclipse.jetty.server.Server        : Started @23532ms
+2019-09-01 12:54:51.708  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [com.dzone.mancalagame:mancala-api:0.0.1-SNAPSHOT:stubs] on port 8080
+2019-09-01 12:54:52.474  INFO [mancala-web,,,] 10700 --- [tp1619964974-30] /__admin                                 : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+2019-09-01 12:54:52.548  INFO [mancala-web,,,] 10700 --- [tp1619964974-30] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8080]
+Content-Length: [236]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  "id" : "f59fe0d5-4f93-4503-ba22-9e4e02d574ec",
+  "request" : {
+    "url" : "/ping",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK"
+  },
+  "uuid" : "f59fe0d5-4f93-4503-ba22-9e4e02d574ec"
+}
+
+2019-09-01 12:54:52.775  INFO [mancala-web,,,] 10700 --- [tp1619964974-31] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8080]
+Content-Length: [238]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  "id" : "0340926f-7057-4651-99d6-2a7c8b11b41b",
+  "request" : {
+    "url" : "/health",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK"
+  },
+  "uuid" : "0340926f-7057-4651-99d6-2a7c8b11b41b"
+}
+
+2019-09-01 12:54:52.857  INFO [mancala-web,,,] 10700 --- [tp1619964974-32] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8080]
+Content-Length: [796]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  "id" : "178e2c3f-0b9b-4b47-bc26-73a3c0183eba",
+  "request" : {
+    "url" : "/games/5d414dcd24e4990006e7c900/pits/2",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"playerTurn\":\"PlayerB\",\"id\":\"UbHkhz9p4gZqeAANjzse\",\"pits\":[{\"stones\":6,\"id\":1},{\"stones\":0,\"id\":2},{\"stones\":7,\"id\":3},{\"stones\":7,\"id\":4},{\"stones\":7,\"id\":5},{\"stones\":7,\"id\":6},{\"stones\":1,\"id\":7},{\"stones\":7,\"id\":8},{\"stones\":6,\"id\":9},{\"stones\":6,\"id\":10},{\"stones\":6,\"id\":11},{\"stones\":6,\"id\":12},{\"stones\":6,\"id\":13},{\"stones\":0,\"id\":14}]}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "178e2c3f-0b9b-4b47-bc26-73a3c0183eba"
+}
+
+2019-09-01 12:54:52.897  INFO [mancala-web,,,] 10700 --- [tp1619964974-33] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8080]
+Content-Length: [762]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  "id" : "a6e8bc3e-7faa-43aa-97dd-010a775b119d",
+  "request" : {
+    "url" : "/games",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"playerTurn\":null,\"id\":\"5d414dcd24e4990006e7c900\",\"pits\":[{\"stones\":6,\"id\":1},{\"stones\":6,\"id\":2},{\"stones\":6,\"id\":3},{\"stones\":6,\"id\":4},{\"stones\":6,\"id\":5},{\"stones\":6,\"id\":6},{\"stones\":0,\"id\":7},{\"stones\":6,\"id\":8},{\"stones\":6,\"id\":9},{\"stones\":6,\"id\":10},{\"stones\":6,\"id\":11},{\"stones\":6,\"id\":12},{\"stones\":6,\"id\":13},{\"stones\":0,\"id\":14}]}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "a6e8bc3e-7faa-43aa-97dd-010a775b119d"
+}
+
+2019-09-01 12:54:53.021  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={com.dzone.mancalagame:mancala-api:0.0.1-SNAPSHOT:stubs=8080}]
+2019-09-01 12:54:54.979  INFO [mancala-web,,,] 10700 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2019-09-01 12:54:55.242  INFO [mancala-web,,,] 10700 --- [           main] c.d.m.web.client.CDCApplicationTests     : Started CDCApplicationTests in 25.574 seconds (JVM running for 27.067)
+2019-09-01 12:54:56.270  INFO [mancala-web,,,] 10700 --- [           main] c.netflix.config.ChainedDynamicProperty  : Flipping property: mancala-api.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-09-01 12:54:56.347  INFO [mancala-web,,,] 10700 --- [           main] c.netflix.loadbalancer.BaseLoadBalancer  : Client: mancala-api instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=mancala-api,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-09-01 12:54:56.363  INFO [mancala-web,,,] 10700 --- [           main] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-09-01 12:54:56.396  INFO [mancala-web,,,] 10700 --- [           main] c.netflix.config.ChainedDynamicProperty  : Flipping property: mancala-api.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-09-01 12:54:56.400  INFO [mancala-web,,,] 10700 --- [           main] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client mancala-api initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=mancala-api,current list of Servers=[localhost:8080],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:localhost:8080;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 03:30:00 IRST 1970;	First connection made: Thu Jan 01 03:30:00 IRST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.contract.stubrunner.spring.cloud.ribbon.StubRunnerRibbonServerList@357e7113
+2019-09-01 12:54:56.450  INFO [mancala-web,,,] 10700 --- [           main] c.d.mancala.web.client.MancalaClient     : calling:http://localhost:8080/games
+2019-09-01 12:54:56.662  INFO [mancala-web,,,] 10700 --- [tp1619964974-30] /                                        : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+2019-09-01 12:54:56.940  INFO [mancala-web,,,] 10700 --- [tp1619964974-30] WireMock                                 : Request received:
+127.0.0.1 - POST /games
+
+Accept: [application/json, application/*+json]
+X-B3-SpanId: [0f5b81cb5c546566]
+User-Agent: [Java/1.8.0_211]
+Connection: [keep-alive]
+X-B3-Sampled: [1]
+X-B3-TraceId: [0f5b81cb5c546566]
+Host: [localhost:8080]
+Content-Length: [0]
+Content-Type: [application/x-www-form-urlencoded]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"playerTurn\":null,\"id\":\"5d414dcd24e4990006e7c900\",\"pits\":[{\"stones\":6,\"id\":1},{\"stones\":6,\"id\":2},{\"stones\":6,\"id\":3},{\"stones\":6,\"id\":4},{\"stones\":6,\"id\":5},{\"stones\":6,\"id\":6},{\"stones\":0,\"id\":7},{\"stones\":6,\"id\":8},{\"stones\":6,\"id\":9},{\"stones\":6,\"id\":10},{\"stones\":6,\"id\":11},{\"stones\":6,\"id\":12},{\"stones\":6,\"id\":13},{\"stones\":0,\"id\":14}]}",
+  "headers" : {
+    "Content-Type" : "application/json"
+  },
+  "transformers" : [ "response-template" ]
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [a6e8bc3e-7faa-43aa-97dd-010a775b119d]
+
+
+2019-09-01 12:54:57.007  INFO [mancala-web,,,] 10700 --- [           main] c.d.mancala.web.client.MancalaClient     : response: {
+  "id" : "5d414dcd24e4990006e7c900",
+  "playerTurn" : null,
+  "pits" : [ {
+    "id" : 1,
+    "stones" : 6
+  }, {
+    "id" : 2,
+    "stones" : 6
+  }, {
+    "id" : 3,
+    "stones" : 6
+  }, {
+    "id" : 4,
+    "stones" : 6
+  }, {
+    "id" : 5,
+    "stones" : 6
+  }, {
+    "id" : 6,
+    "stones" : 6
+  }, {
+    "id" : 7,
+    "stones" : 0
+  }, {
+    "id" : 8,
+    "stones" : 6
+  }, {
+    "id" : 9,
+    "stones" : 6
+  }, {
+    "id" : 10,
+    "stones" : 6
+  }, {
+    "id" : 11,
+    "stones" : 6
+  }, {
+    "id" : 12,
+    "stones" : 6
+  }, {
+    "id" : 13,
+    "stones" : 6
+  }, {
+    "id" : 14,
+    "stones" : 0
+  } ]
+}
+2019-09-01 12:54:57.157  INFO [mancala-web,,,] 10700 --- [           main] c.d.mancala.web.client.MancalaClient     : calling: http://localhost:8080/games/5d414dcd24e4990006e7c900/pits/2
+2019-09-01 12:54:57.165  INFO [mancala-web,,,] 10700 --- [tp1619964974-32] WireMock                                 : Request received:
+127.0.0.1 - PUT /games/5d414dcd24e4990006e7c900/pits/2
+
+Accept: [application/json, application/*+json]
+X-B3-SpanId: [d9862762df345fb0]
+User-Agent: [Java/1.8.0_211]
+Connection: [keep-alive]
+X-B3-Sampled: [1]
+X-B3-TraceId: [d9862762df345fb0]
+Host: [localhost:8080]
+Content-Length: [0]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"playerTurn\":\"PlayerB\",\"id\":\"UbHkhz9p4gZqeAANjzse\",\"pits\":[{\"stones\":6,\"id\":1},{\"stones\":0,\"id\":2},{\"stones\":7,\"id\":3},{\"stones\":7,\"id\":4},{\"stones\":7,\"id\":5},{\"stones\":7,\"id\":6},{\"stones\":1,\"id\":7},{\"stones\":7,\"id\":8},{\"stones\":6,\"id\":9},{\"stones\":6,\"id\":10},{\"stones\":6,\"id\":11},{\"stones\":6,\"id\":12},{\"stones\":6,\"id\":13},{\"stones\":0,\"id\":14}]}",
+  "headers" : {
+    "Content-Type" : "application/json"
+  },
+  "transformers" : [ "response-template" ]
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [178e2c3f-0b9b-4b47-bc26-73a3c0183eba]
+
+
+2019-09-01 12:54:57.176  INFO [mancala-web,,,] 10700 --- [           main] c.d.mancala.web.client.MancalaClient     : response: {
+  "id" : "UbHkhz9p4gZqeAANjzse",
+  "playerTurn" : "PlayerB",
+  "pits" : [ {
+    "id" : 1,
+    "stones" : 6
+  }, {
+    "id" : 2,
+    "stones" : 0
+  }, {
+    "id" : 3,
+    "stones" : 7
+  }, {
+    "id" : 4,
+    "stones" : 7
+  }, {
+    "id" : 5,
+    "stones" : 7
+  }, {
+    "id" : 6,
+    "stones" : 7
+  }, {
+    "id" : 7,
+    "stones" : 1
+  }, {
+    "id" : 8,
+    "stones" : 7
+  }, {
+    "id" : 9,
+    "stones" : 6
+  }, {
+    "id" : 10,
+    "stones" : 6
+  }, {
+    "id" : 11,
+    "stones" : 6
+  }, {
+    "id" : 12,
+    "stones" : 6
+  }, {
+    "id" : 13,
+    "stones" : 6
+  }, {
+    "id" : 14,
+    "stones" : 0
+  } ]
+}
+KalahaGame(id=UbHkhz9p4gZqeAANjzse, playerTurn=PlayerB, pits=[1:6, 2:0, 3:7, 4:7, 5:7, 6:7, 7:1, 8:7, 9:6, 10:6, 11:6, 12:6, 13:6, 14:0])
+2019-09-01 12:54:57.190  INFO [mancala-web,,,] 10700 --- [           main] c.d.mancala.web.client.MancalaClient     : calling:http://localhost:8080/games
+2019-09-01 12:54:57.199  INFO [mancala-web,,,] 10700 --- [tp1619964974-33] WireMock                                 : Request received:
+127.0.0.1 - POST /games
+
+Accept: [application/json, application/*+json]
+X-B3-SpanId: [3b43a07202c36d02]
+User-Agent: [Java/1.8.0_211]
+Connection: [keep-alive]
+X-B3-Sampled: [1]
+X-B3-TraceId: [3b43a07202c36d02]
+Host: [localhost:8080]
+Content-Length: [0]
+Content-Type: [application/x-www-form-urlencoded]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"playerTurn\":null,\"id\":\"5d414dcd24e4990006e7c900\",\"pits\":[{\"stones\":6,\"id\":1},{\"stones\":6,\"id\":2},{\"stones\":6,\"id\":3},{\"stones\":6,\"id\":4},{\"stones\":6,\"id\":5},{\"stones\":6,\"id\":6},{\"stones\":0,\"id\":7},{\"stones\":6,\"id\":8},{\"stones\":6,\"id\":9},{\"stones\":6,\"id\":10},{\"stones\":6,\"id\":11},{\"stones\":6,\"id\":12},{\"stones\":6,\"id\":13},{\"stones\":0,\"id\":14}]}",
+  "headers" : {
+    "Content-Type" : "application/json"
+  },
+  "transformers" : [ "response-template" ]
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [a6e8bc3e-7faa-43aa-97dd-010a775b119d]
+
+
+2019-09-01 12:54:57.208  INFO [mancala-web,,,] 10700 --- [           main] c.d.mancala.web.client.MancalaClient     : response: {
+  "id" : "5d414dcd24e4990006e7c900",
+  "playerTurn" : null,
+  "pits" : [ {
+    "id" : 1,
+    "stones" : 6
+  }, {
+    "id" : 2,
+    "stones" : 6
+  }, {
+    "id" : 3,
+    "stones" : 6
+  }, {
+    "id" : 4,
+    "stones" : 6
+  }, {
+    "id" : 5,
+    "stones" : 6
+  }, {
+    "id" : 6,
+    "stones" : 6
+  }, {
+    "id" : 7,
+    "stones" : 0
+  }, {
+    "id" : 8,
+    "stones" : 6
+  }, {
+    "id" : 9,
+    "stones" : 6
+  }, {
+    "id" : 10,
+    "stones" : 6
+  }, {
+    "id" : 11,
+    "stones" : 6
+  }, {
+    "id" : 12,
+    "stones" : 6
+  }, {
+    "id" : 13,
+    "stones" : 6
+  }, {
+    "id" : 14,
+    "stones" : 0
+  } ]
+}
+2019-09-01 12:54:57.214  WARN [mancala-web,,,] 10700 --- [           main] .StubRunnerWireMockTestExecutionListener : You've used fixed ports for WireMock setup - will mark context as dirty. Please use random ports, as much as possible. Your tests will be faster and more reliable and thiswarning will go away
+2019-09-01 12:54:57.228  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.s.NetworkTrafficServerConnector  : Stopped NetworkTrafficServerConnector@5ea2bde{HTTP/1.1}{0.0.0.0:8080}
+2019-09-01 12:54:57.231  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@2d3bb944{/,null,UNAVAILABLE}
+2019-09-01 12:54:57.233  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@3700994c{/__admin,null,UNAVAILABLE}
+2019-09-01 12:54:57.236  WARN [mancala-web,,,] 10700 --- [           main] w.o.e.j.util.thread.QueuedThreadPool     : qtp1619964974{STOPPING,8<=8<=10,i=7,q=7} Couldn't stop Thread[qtp1619964974-29,5,main]
+2019-09-01 12:54:57.237  WARN [mancala-web,,,] 10700 --- [           main] w.o.e.j.util.thread.QueuedThreadPool     : qtp1619964974{STOPPING,8<=8<=10,i=2,q=6} Couldn't stop Thread[qtp1619964974-33,5,]
+2019-09-01 12:54:57.238  WARN [mancala-web,,,] 10700 --- [           main] w.o.e.j.util.thread.QueuedThreadPool     : qtp1619964974{STOPPING,8<=8<=10,i=2,q=6} Couldn't stop Thread[qtp1619964974-30,5,main]
+2019-09-01 12:54:57.371  INFO [mancala-web,,,] 10700 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: mancala-api.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-09-01 12:54:57.484  WARN [mancala-web,,,] 10700 --- [ender@709d86a2}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'noOpServerList' defined in org.springframework.cloud.contract.stubrunner.spring.cloud.ribbon.StubRunnerRibbonConfiguration: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'batchStubRunner': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2019-09-01 12:54:57.487  INFO [mancala-web,,,] 10700 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-01 12:54:59.684  INFO [mancala-web,,,] 10700 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8240299c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.6.RELEASE)
+
+2019-09-01 12:55:01.915  INFO [mancala-web,,,] 10700 --- [           main] c.d.m.web.client.CDCApplicationTests     : No active profile set, falling back to default profiles: default
+2019-09-01 12:55:02.785  INFO [mancala-web,,,] 10700 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b182697d-5ed3-3ed3-9f53-9783bc0cdf09
+2019-09-01 12:55:02.931  INFO [mancala-web,,,] 10700 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8240299c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-01 12:55:02.971  INFO [mancala-web,,,] 10700 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.contract.stubrunner.spring.cloud.StubRunnerSpringCloudAutoConfiguration' of type [org.springframework.cloud.contract.stubrunner.spring.cloud.StubRunnerSpringCloudAutoConfiguration$$EnhancerBySpringCGLIB$$a7d97367] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-01 12:55:03.576  WARN [mancala-web,,,] 10700 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-09-01 12:55:03.577  INFO [mancala-web,,,] 10700 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-01 12:55:04.520  INFO [mancala-web,,,] 10700 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-01 12:55:08.780  INFO [mancala-web,,,] 10700 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-09-01 12:55:08.826  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
+2019-09-01 12:55:08.826  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
+2019-09-01 12:55:08.828  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Desired version is [+] - will try to resolve the latest version
+2019-09-01 12:55:08.830  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
+2019-09-01 12:55:08.832  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [com.dzone.mancalagame:mancala-api:jar:stubs:0.0.1-SNAPSHOT] to C:\Users\Talebi\.m2\repository\com\dzone\mancalagame\mancala-api\0.0.1-SNAPSHOT\mancala-api-0.0.1-SNAPSHOT-stubs.jar
+2019-09-01 12:55:08.833  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/C:/Users/Talebi/.m2/repository/com/dzone/mancalagame/mancala-api/0.0.1-SNAPSHOT/mancala-api-0.0.1-SNAPSHOT-stubs.jar]
+2019-09-01 12:55:08.850  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [C:\Users\Talebi\AppData\Local\Temp\contracts19580860002393324]
+2019-09-01 12:55:09.167  INFO [mancala-web,,,] 10700 --- [           main] w.org.eclipse.jetty.server.Server        : jetty-9.2.z-SNAPSHOT
+2019-09-01 12:55:09.174  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@7712c315{/__admin,null,AVAILABLE}
+2019-09-01 12:55:09.175  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@5eaa6f76{/,null,AVAILABLE}
+2019-09-01 12:55:09.181  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.s.NetworkTrafficServerConnector  : Started NetworkTrafficServerConnector@3fc105dd{HTTP/1.1}{0.0.0.0:8080}
+2019-09-01 12:55:09.182  INFO [mancala-web,,,] 10700 --- [           main] w.org.eclipse.jetty.server.Server        : Started @41007ms
+2019-09-01 12:55:09.182  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [com.dzone.mancalagame:mancala-api:0.0.1-SNAPSHOT:stubs] on port 8080
+2019-09-01 12:55:09.189  INFO [mancala-web,,,] 10700 --- [qtp153175845-54] /__admin                                 : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+2019-09-01 12:55:09.193  INFO [mancala-web,,,] 10700 --- [qtp153175845-54] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8080]
+Content-Length: [236]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  "id" : "3cc6a283-a596-44a2-a0bb-262d047486d8",
+  "request" : {
+    "url" : "/ping",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK"
+  },
+  "uuid" : "3cc6a283-a596-44a2-a0bb-262d047486d8"
+}
+
+2019-09-01 12:55:09.229  INFO [mancala-web,,,] 10700 --- [qtp153175845-58] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8080]
+Content-Length: [238]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  "id" : "3ebd7404-f58f-45e2-897d-ec6f21ec5d2d",
+  "request" : {
+    "url" : "/health",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK"
+  },
+  "uuid" : "3ebd7404-f58f-45e2-897d-ec6f21ec5d2d"
+}
+
+2019-09-01 12:55:09.276  INFO [mancala-web,,,] 10700 --- [qtp153175845-57] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8080]
+Content-Length: [796]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  "id" : "178e2c3f-0b9b-4b47-bc26-73a3c0183eba",
+  "request" : {
+    "url" : "/games/5d414dcd24e4990006e7c900/pits/2",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"playerTurn\":\"PlayerB\",\"id\":\"UbHkhz9p4gZqeAANjzse\",\"pits\":[{\"stones\":6,\"id\":1},{\"stones\":0,\"id\":2},{\"stones\":7,\"id\":3},{\"stones\":7,\"id\":4},{\"stones\":7,\"id\":5},{\"stones\":7,\"id\":6},{\"stones\":1,\"id\":7},{\"stones\":7,\"id\":8},{\"stones\":6,\"id\":9},{\"stones\":6,\"id\":10},{\"stones\":6,\"id\":11},{\"stones\":6,\"id\":12},{\"stones\":6,\"id\":13},{\"stones\":0,\"id\":14}]}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "178e2c3f-0b9b-4b47-bc26-73a3c0183eba"
+}
+
+2019-09-01 12:55:09.308  INFO [mancala-web,,,] 10700 --- [qtp153175845-59] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8080]
+Content-Length: [762]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  "id" : "a6e8bc3e-7faa-43aa-97dd-010a775b119d",
+  "request" : {
+    "url" : "/games",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"playerTurn\":null,\"id\":\"5d414dcd24e4990006e7c900\",\"pits\":[{\"stones\":6,\"id\":1},{\"stones\":6,\"id\":2},{\"stones\":6,\"id\":3},{\"stones\":6,\"id\":4},{\"stones\":6,\"id\":5},{\"stones\":6,\"id\":6},{\"stones\":0,\"id\":7},{\"stones\":6,\"id\":8},{\"stones\":6,\"id\":9},{\"stones\":6,\"id\":10},{\"stones\":6,\"id\":11},{\"stones\":6,\"id\":12},{\"stones\":6,\"id\":13},{\"stones\":0,\"id\":14}]}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "a6e8bc3e-7faa-43aa-97dd-010a775b119d"
+}
+
+2019-09-01 12:55:09.343  INFO [mancala-web,,,] 10700 --- [           main] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={com.dzone.mancalagame:mancala-api:0.0.1-SNAPSHOT:stubs=8080}]
+2019-09-01 12:55:10.784  INFO [mancala-web,,,] 10700 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2019-09-01 12:55:11.014  INFO [mancala-web,,,] 10700 --- [           main] c.d.m.web.client.CDCApplicationTests     : Started CDCApplicationTests in 13.515 seconds (JVM running for 42.839)
+2019-09-01 12:55:11.037  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.s.NetworkTrafficServerConnector  : Stopped NetworkTrafficServerConnector@3fc105dd{HTTP/1.1}{0.0.0.0:8080}
+2019-09-01 12:55:11.038  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@5eaa6f76{/,null,UNAVAILABLE}
+2019-09-01 12:55:11.041  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@7712c315{/__admin,null,UNAVAILABLE}
+2019-09-01 12:55:11.538  WARN [mancala-web,,,] 10700 --- [ender@1c00a9f0}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'noOpServerList' defined in org.springframework.cloud.contract.stubrunner.spring.cloud.ribbon.StubRunnerRibbonConfiguration: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'batchStubRunner': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2019-09-01 12:55:11.540  INFO [mancala-web,,,] 10700 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.63 s - in com.dzone.mancala.web.client.CDCApplicationTests
+[INFO] Running com.dzone.mancala.web.client.ClientApplicationTests
+2019-09-01 12:55:11.547  INFO [mancala-web,,,] 10700 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.dzone.mancala.web.client.ClientApplicationTests], using SpringBootContextLoader
+2019-09-01 12:55:11.549  INFO [mancala-web,,,] 10700 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.dzone.mancala.web.client.ClientApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-01 12:55:11.564  INFO [mancala-web,,,] 10700 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener, org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener]
+2019-09-01 12:55:11.567  INFO [mancala-web,,,] 10700 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5702e6f3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5687e92d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2eef43f5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2c10f9f3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6c65a7fc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5c2f5dc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5166fe7a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7a925ac4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3b09582d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@29f72685, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener@4f8488ef, org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener@27a8bfa1]
+2019-09-01 12:55:13.704  INFO [mancala-web,,,] 10700 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8240299c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.6.RELEASE)
+
+2019-09-01 12:55:15.829  INFO [mancala-web,,,] 10700 --- [           main] c.d.m.web.client.ClientApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-01 12:55:16.599  INFO [mancala-web,,,] 10700 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a49f98b5-3795-3bb5-a5dd-ba114e4bf198
+2019-09-01 12:55:17.316  INFO [mancala-web,,,] 10700 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8240299c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-01 12:55:17.899  WARN [mancala-web,,,] 10700 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-09-01 12:55:17.899  INFO [mancala-web,,,] 10700 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-01 12:55:18.890  INFO [mancala-web,,,] 10700 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-01 12:55:22.716  INFO [mancala-web,,,] 10700 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-09-01 12:55:24.211  INFO [mancala-web,,,] 10700 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2019-09-01 12:55:24.334  INFO [mancala-web,,,] 10700 --- [           main] w.org.eclipse.jetty.server.Server        : jetty-9.2.z-SNAPSHOT
+2019-09-01 12:55:24.337  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@3405025a{/__admin,null,AVAILABLE}
+2019-09-01 12:55:24.338  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@27bde886{/,null,AVAILABLE}
+2019-09-01 12:55:24.341  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.s.NetworkTrafficServerConnector  : Started NetworkTrafficServerConnector@3b3639f9{HTTP/1.1}{0.0.0.0:8080}
+2019-09-01 12:55:24.342  INFO [mancala-web,,,] 10700 --- [           main] w.org.eclipse.jetty.server.Server        : Started @56167ms
+2019-09-01 12:55:24.368  INFO [mancala-web,,,] 10700 --- [           main] c.d.m.web.client.ClientApplicationTests  : Started ClientApplicationTests in 12.795 seconds (JVM running for 56.193)
+2019-09-01 12:55:24.425  INFO [mancala-web,,,] 10700 --- [           main] c.d.mancala.web.client.MancalaClient     : calling:http://localhost:8080/games
+2019-09-01 12:55:24.435  INFO [mancala-web,,,] 10700 --- [tp1269849642-74] /                                        : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+2019-09-01 12:55:24.445  INFO [mancala-web,,,] 10700 --- [tp1269849642-74] WireMock                                 : Request received:
+127.0.0.1 - POST /games
+
+Accept: [application/json, application/*+json]
+X-B3-SpanId: [0478621b21682c1c]
+User-Agent: [Java/1.8.0_211]
+Connection: [keep-alive]
+X-B3-Sampled: [1]
+X-B3-TraceId: [0478621b21682c1c]
+Host: [localhost:8080]
+Content-Length: [0]
+Content-Type: [application/x-www-form-urlencoded]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\r\n  \"id\": \"5d414dcd24e4990006e7c9d3\",\r\n  \"pits\": [\r\n    {\r\n      \"id\": 1,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 2,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 3,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 4,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 5,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 6,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 7,\r\n      \"stones\": 0\r\n    },\r\n    {\r\n      \"id\": 8,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 9,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 10,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 11,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 12,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 13,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 14,\r\n      \"stones\": 0\r\n    }\r\n  ],\r\n  \"playerTurn\": null\r\n}",
+  "headers" : {
+    "Content-Type" : "application/json;charset=UTF-8"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json;charset=UTF-8]
+Matched-Stub-Id: [a8b32dc5-16ad-4c74-8a2c-cbcad6ce99e4]
+
+
+2019-09-01 12:55:24.461  INFO [mancala-web,,,] 10700 --- [           main] c.d.mancala.web.client.MancalaClient     : response: {
+  "id" : "5d414dcd24e4990006e7c9d3",
+  "playerTurn" : null,
+  "pits" : [ {
+    "id" : 1,
+    "stones" : 6
+  }, {
+    "id" : 2,
+    "stones" : 6
+  }, {
+    "id" : 3,
+    "stones" : 6
+  }, {
+    "id" : 4,
+    "stones" : 6
+  }, {
+    "id" : 5,
+    "stones" : 6
+  }, {
+    "id" : 6,
+    "stones" : 6
+  }, {
+    "id" : 7,
+    "stones" : 0
+  }, {
+    "id" : 8,
+    "stones" : 6
+  }, {
+    "id" : 9,
+    "stones" : 6
+  }, {
+    "id" : 10,
+    "stones" : 6
+  }, {
+    "id" : 11,
+    "stones" : 6
+  }, {
+    "id" : 12,
+    "stones" : 6
+  }, {
+    "id" : 13,
+    "stones" : 6
+  }, {
+    "id" : 14,
+    "stones" : 0
+  } ]
+}
+2019-09-01 12:55:24.467  INFO [mancala-web,,,] 10700 --- [           main] c.d.mancala.web.client.MancalaClient     : calling: http://localhost:8080/games/5d414dcd24e4990006e7c9d3/pits/2
+2019-09-01 12:55:24.476  INFO [mancala-web,,,] 10700 --- [tp1269849642-75] WireMock                                 : Request received:
+127.0.0.1 - PUT /games/5d414dcd24e4990006e7c9d3/pits/2
+
+Accept: [application/json, application/*+json]
+X-B3-SpanId: [fefdcd0601a59918]
+User-Agent: [Java/1.8.0_211]
+Connection: [keep-alive]
+X-B3-Sampled: [1]
+X-B3-TraceId: [fefdcd0601a59918]
+Host: [localhost:8080]
+Content-Length: [0]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\r\n  \"id\": \"5d414dcd24e4990006e7c9d3\",\r\n  \"pits\": [\r\n    {\r\n      \"id\": 1,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 2,\r\n      \"stones\": 0\r\n    },\r\n    {\r\n      \"id\": 3,\r\n      \"stones\": 7\r\n    },\r\n    {\r\n      \"id\": 4,\r\n      \"stones\": 7\r\n    },\r\n    {\r\n      \"id\": 5,\r\n      \"stones\": 7\r\n    },\r\n    {\r\n      \"id\": 6,\r\n      \"stones\": 7\r\n    },\r\n    {\r\n      \"id\": 7,\r\n      \"stones\": 1\r\n    },\r\n    {\r\n      \"id\": 8,\r\n      \"stones\": 7\r\n    },\r\n    {\r\n      \"id\": 9,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 10,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 11,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 12,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 13,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 14,\r\n      \"stones\": 0\r\n    }\r\n  ],\r\n  \"playerTurn\": \"PlayerB\"\r\n}",
+  "headers" : {
+    "Content-Type" : "application/json;charset=UTF-8"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json;charset=UTF-8]
+Matched-Stub-Id: [48e896d1-910d-4a8d-8d87-dbdcea735956]
+
+
+2019-09-01 12:55:24.482  INFO [mancala-web,,,] 10700 --- [           main] c.d.mancala.web.client.MancalaClient     : response: {
+  "id" : "5d414dcd24e4990006e7c9d3",
+  "playerTurn" : "PlayerB",
+  "pits" : [ {
+    "id" : 1,
+    "stones" : 6
+  }, {
+    "id" : 2,
+    "stones" : 0
+  }, {
+    "id" : 3,
+    "stones" : 7
+  }, {
+    "id" : 4,
+    "stones" : 7
+  }, {
+    "id" : 5,
+    "stones" : 7
+  }, {
+    "id" : 6,
+    "stones" : 7
+  }, {
+    "id" : 7,
+    "stones" : 1
+  }, {
+    "id" : 8,
+    "stones" : 7
+  }, {
+    "id" : 9,
+    "stones" : 6
+  }, {
+    "id" : 10,
+    "stones" : 6
+  }, {
+    "id" : 11,
+    "stones" : 6
+  }, {
+    "id" : 12,
+    "stones" : 6
+  }, {
+    "id" : 13,
+    "stones" : 6
+  }, {
+    "id" : 14,
+    "stones" : 0
+  } ]
+}
+KalahaGame(id=5d414dcd24e4990006e7c9d3, playerTurn=PlayerB, pits=[1:6, 2:0, 3:7, 4:7, 5:7, 6:7, 7:1, 8:7, 9:6, 10:6, 11:6, 12:6, 13:6, 14:0])
+2019-09-01 12:55:24.492  INFO [mancala-web,,,] 10700 --- [           main] c.d.mancala.web.client.MancalaClient     : calling:http://localhost:8080/games
+2019-09-01 12:55:24.502  INFO [mancala-web,,,] 10700 --- [tp1269849642-76] WireMock                                 : Request received:
+127.0.0.1 - POST /games
+
+Accept: [application/json, application/*+json]
+X-B3-SpanId: [9a72f3e1b54cb6c1]
+User-Agent: [Java/1.8.0_211]
+Connection: [keep-alive]
+X-B3-Sampled: [1]
+X-B3-TraceId: [9a72f3e1b54cb6c1]
+Host: [localhost:8080]
+Content-Length: [0]
+Content-Type: [application/x-www-form-urlencoded]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\r\n  \"id\": \"5d414dcd24e4990006e7c9d3\",\r\n  \"pits\": [\r\n    {\r\n      \"id\": 1,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 2,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 3,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 4,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 5,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 6,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 7,\r\n      \"stones\": 0\r\n    },\r\n    {\r\n      \"id\": 8,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 9,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 10,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 11,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 12,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 13,\r\n      \"stones\": 6\r\n    },\r\n    {\r\n      \"id\": 14,\r\n      \"stones\": 0\r\n    }\r\n  ],\r\n  \"playerTurn\": null\r\n}",
+  "headers" : {
+    "Content-Type" : "application/json;charset=UTF-8"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json;charset=UTF-8]
+Matched-Stub-Id: [8f88a00f-074c-4eff-9bbc-e45706834381]
+
+
+2019-09-01 12:55:24.510  INFO [mancala-web,,,] 10700 --- [           main] c.d.mancala.web.client.MancalaClient     : response: {
+  "id" : "5d414dcd24e4990006e7c9d3",
+  "playerTurn" : null,
+  "pits" : [ {
+    "id" : 1,
+    "stones" : 6
+  }, {
+    "id" : 2,
+    "stones" : 6
+  }, {
+    "id" : 3,
+    "stones" : 6
+  }, {
+    "id" : 4,
+    "stones" : 6
+  }, {
+    "id" : 5,
+    "stones" : 6
+  }, {
+    "id" : 6,
+    "stones" : 6
+  }, {
+    "id" : 7,
+    "stones" : 0
+  }, {
+    "id" : 8,
+    "stones" : 6
+  }, {
+    "id" : 9,
+    "stones" : 6
+  }, {
+    "id" : 10,
+    "stones" : 6
+  }, {
+    "id" : 11,
+    "stones" : 6
+  }, {
+    "id" : 12,
+    "stones" : 6
+  }, {
+    "id" : 13,
+    "stones" : 6
+  }, {
+    "id" : 14,
+    "stones" : 0
+  } ]
+}
+2019-09-01 12:55:24.515  WARN [mancala-web,,,] 10700 --- [           main] o.s.c.c.w.WireMockTestExecutionListener  : You've used fixed ports for WireMock setup - will mark context as dirty. Please use random ports, as much as possible. Your tests will be faster and more reliable and this warning will go away
+2019-09-01 12:55:24.521  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.s.NetworkTrafficServerConnector  : Stopped NetworkTrafficServerConnector@3b3639f9{HTTP/1.1}{0.0.0.0:8080}
+2019-09-01 12:55:24.522  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@27bde886{/,null,UNAVAILABLE}
+2019-09-01 12:55:24.523  INFO [mancala-web,,,] 10700 --- [           main] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@3405025a{/__admin,null,UNAVAILABLE}
+2019-09-01 12:55:24.678  WARN [mancala-web,,,] 10700 --- [ender@3ec6bc6f}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'httpClient' defined in org.springframework.cloud.netflix.ribbon.apache.HttpClientRibbonConfiguration$ApacheHttpClientConfiguration: Unsatisfied dependency expressed through method 'httpClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'apacheHttpClientFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2019-09-01 12:55:24.682  INFO [mancala-web,,,] 10700 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.089 s - in com.dzone.mancala.web.client.ClientApplicationTests
+2019-09-01 12:55:24.717  INFO [mancala-web,,,] 10700 --- [      Thread-21] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ mancala-web ---
+[INFO] Building jar: D:\mancala-game\mancala-microservice\mancala-web\target\mancala-web-0.1.0.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.6.RELEASE:repackage (repackage) @ mancala-web ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ mancala-web ---
+[INFO] Installing D:\mancala-game\mancala-microservice\mancala-web\target\mancala-web-0.1.0.jar to C:\Users\Talebi\.m2\repository\com\dzone\mancalagame\mancala-web\0.1.0\mancala-web-0.1.0.jar
+[INFO] Installing D:\mancala-game\mancala-microservice\mancala-web\pom.xml to C:\Users\Talebi\.m2\repository\com\dzone\mancalagame\mancala-web\0.1.0\mancala-web-0.1.0.pom
+[INFO] 
+[INFO] -------------< com.dzone.mancalagame:mancala-microservice >-------------
+[INFO] Building mancala-microservice 0.0.1-SNAPSHOT                       [3/3]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ mancala-microservice ---
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.6.RELEASE:repackage (default) @ mancala-microservice ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ mancala-microservice ---
+[INFO] Installing D:\mancala-game\mancala-microservice\pom.xml to C:\Users\Talebi\.m2\repository\com\dzone\mancalagame\mancala-microservice\0.0.1-SNAPSHOT\mancala-microservice-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] mancala-api 0.0.1-SNAPSHOT ......................... SUCCESS [01:13 min]
+[INFO] mancala-web 0.1.0 .................................. SUCCESS [01:08 min]
+[INFO] mancala-microservice 0.0.1-SNAPSHOT ................ SUCCESS [  0.740 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:25 min
+[INFO] Finished at: 2019-09-01T12:55:27+04:30
+[INFO] ------------------------------------------------------------------------

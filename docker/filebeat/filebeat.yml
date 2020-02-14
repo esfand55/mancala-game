@@ -1,0 +1,10 @@
+filebeat.prospectors:
+        - input_type: log
+          paths:
+            - /logs/*.json
+          json:
+            keys_under_root: true
+
+        output.elasticsearch:
+          hosts:
+            - elasticsearch:9200

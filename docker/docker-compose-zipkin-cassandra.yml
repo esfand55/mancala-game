@@ -1,0 +1,96 @@
+version: '3'
+services:
+  consul-server:
+    image: consul:1.2.0
+    command: consul agent -dev -client 0.0.0.0
+    ports:
+      - "8500:8500"
+      - "8600:8600/udp"
+  mongodb:
+    image: mongo:latest
+    container_name: "dzone_mancala_mongodb"
+    ports:
+      - "27017:27017"
+    command: mongod --smallfiles --logpath=/dev/null # --quiet
+
+  redisdb:
+    restart: always
+    container_name: "dzone_mancala_redis"
+    image: redis
+    ports:
+      - "6379:6379"
+
+  mancala-api:
+    build: ../mancala-microservice/mancala-api
+    links:
+      - consul-server
+      - zipkin-server
+    depends_on:
+      - redisdb
+      - mongodb
+    environment:
+      - MANCALA_PIT_STONES=6
+      - SPRING_CLOUD_CONSUL_HOST=consul-server
+      - SPRING_APPLICATION_NAME=mancala-api
+      - SPRING_DATA_MONGODB_HOST=mongodb
+      - SPRING_DATA_MONGODB_PORT=27017
+      - SPRING_REDIS_HOST=redisdb
+      - SPRING_REDIS_PORT=6379
+      - MANCALA_API_SERVICE_ID= mancala-api
+      - SPRING_ZIPKIN_BASE_URL=http://zipkin-server:9411/
+
+  mancala-web:
+    build: ../mancala-microservice/mancala-web
+    links:
+      - consul-server
+      - zipkin-server
+    environment:
+      - SPRING_CLOUD_CONSUL_HOST=consul-server
+      - SPRING_APPLICATION_NAME=mancala-web
+      - MANCALA_API_SERVICE_ID= mancala-api
+      - SPRING_ZIPKIN_BASE_URL=http://zipkin-server:9411/
+
+  apache:
+    build: apache
+    links:
+      - consul-server
+    depends_on:
+      - consul-server
+    ports:
+      - "80:80"
+
+  zipkin-storage:
+    image: openzipkin/zipkin-cassandra
+    container_name: cassandra
+    ports:
+      - "9042:9042"
+
+  zipkin-server:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+    environment:
+      - STORAGE_TYPE=cassandra3
+      - CASSANDRA_ENSURE_SCHEMA=false
+      - CASSANDRA_CONTACT_POINTS=cassandra
+    depends_on:
+      - zipkin-storage
+
+  grafana:
+    image: grafana/grafana:6.2.5
+    container_name: grafana
+    ports:
+      - 3000:3000
+    depends_on:
+      - prometheus
+    environment:
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+
+  prometheus:
+    build: prometheus
+    links:
+      - mancala-api
+      - mancala-web
+    ports:
+      - "9090:9090"

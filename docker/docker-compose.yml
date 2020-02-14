@@ -1,0 +1,56 @@
+version: '3'
+services:
+  consul-server:
+    image: consul:1.2.0
+    command: consul agent -dev -client 0.0.0.0
+    ports:
+      - "8500:8500"
+      - "8600:8600/udp"
+  mongodb:
+    image: mongo:latest
+    container_name: "dzone_mancala_mongodb"
+    ports:
+      - "27017:27017"
+    command: mongod --smallfiles --logpath=/dev/null # --quiet
+
+  redisdb:
+    restart: always
+    container_name: "dzone_mancala_redis"
+    image: redis
+    ports:
+      - "6379:6379"
+
+  mancala-api:
+    build: ../mancala-microservice/mancala-api
+    links:
+      - consul-server
+    depends_on:
+      - redisdb
+      - mongodb
+    environment:
+      - MANCALA_PIT_STONES=6
+      - SPRING_CLOUD_CONSUL_HOST=consul-server
+      - SPRING_APPLICATION_NAME=mancala-api
+      - SPRING_DATA_MONGODB_HOST=mongodb
+      - SPRING_DATA_MONGODB_PORT=27017
+      - SPRING_REDIS_HOST=redisdb
+      - SPRING_REDIS_PORT=6379
+      - MANCALA_API_SERVICE_ID= mancala-api
+
+  mancala-web:
+    build: ../mancala-microservice/mancala-web
+    links:
+      - consul-server
+    environment:
+      - SPRING_CLOUD_CONSUL_HOST=consul-server
+      - SPRING_APPLICATION_NAME=mancala-web
+      - MANCALA_API_SERVICE_ID= mancala-api
+
+  apache:
+    build: apache
+    links:
+      - consul-server
+    depends_on:
+      - consul-server
+    ports:
+      - "80:80"
