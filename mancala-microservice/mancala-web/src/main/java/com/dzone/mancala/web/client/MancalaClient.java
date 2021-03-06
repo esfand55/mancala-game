@@ -19,11 +19,11 @@ public class MancalaClient {
 
     private RestTemplate restTemplate;
 
-    @Autowired
     private MancalaClientConfig mancalaClientConfig;
 
-    public MancalaClient(@Autowired RestTemplate restTemplate) {
+    public MancalaClient(@Autowired RestTemplate restTemplate, @Autowired MancalaClientConfig mancalaClientConfig) {
         this.restTemplate = restTemplate;
+        this.mancalaClientConfig = mancalaClientConfig;
     }
 
     public KalahaGame startNewMancalaGame() throws Exception {
