@@ -43,8 +43,8 @@ public class GameController {
 
             return this.game;
 
-        }catch (Exception e){
-            throw new ApiConnectionException("Error connecting to Mancala service!");
+        }catch (Exception ex){
+            throw new ApiConnectionException("Error connecting to Mancala service!", ex);
         }
     }
 
@@ -55,7 +55,7 @@ public class GameController {
             this.eventPublisher.publishEvent(new SowEvent(this, this.game, pitIndex));
 
         }catch (Exception ex){
-            throw new ApiConnectionException("Error connecting to Mancala service!");
+            throw new ApiConnectionException("Error connecting to Mancala service!", ex);
         }
     }
 
