@@ -7,6 +7,7 @@ import com.github.tomakehurst.wiremock.client.WireMock;
 import lombok.SneakyThrows;
 import org.apache.http.HttpHeaders;
 import org.assertj.core.api.BDDAssertions;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -21,6 +22,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.StreamUtils;
+import org.springframework.web.client.RestTemplate;
 
 import java.nio.charset.Charset;
 import java.util.Arrays;
@@ -43,8 +45,12 @@ public class MancalaIntegrationTests {
     @MockBean
     MancalaClientConfig mancalaClientConfig;
 
-    @Autowired
-    private MancalaClient mancalaClient;
+    MancalaClient mancalaClient;
+
+    @Before
+    public void initTest() {
+        mancalaClient = new MancalaClient(new RestTemplate(), mancalaClientConfig);
+    }
 
     @SneakyThrows
     private String asJson(Resource resource) {
@@ -140,8 +146,6 @@ public class MancalaIntegrationTests {
                 ));
 
         KalahaGame kalahaGameAfterSowingPit2 = mancalaClient.sowMancalaGame(kalahaGame.getId(), 2);
-
-        System.out.println(kalahaGameAfterSowingPit2);
 
         List<KalahaPit> newKalahaPits = Arrays.asList(
                 new KalahaPit(1 , 6),

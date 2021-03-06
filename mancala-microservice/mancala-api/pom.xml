@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.dzone.mancalagame</groupId>
 	<artifactId>mancala-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>mancala-api</name>
 	<description>Spring project for building Mancala Game Api</description>
 
